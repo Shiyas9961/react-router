@@ -1,13 +1,138 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+  width: 100vw;
+  height: 100vh;
+}
+body{
+  background-color: cadetblue;
+}
+header{
+  padding: 5px;
+  width: 100%;
+  background-color: indigo;
+}
+header nav{
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+header nav a{
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px;
+  font-weight: 600;
+}
+main {
+  margin: 0px 30px;
+  height: auto;
+  background-color: wheat;
+  padding: 15px;
+}
+.active{
+  text-decoration: underline;
+  background-color: beige;
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.1s;
+}
+.users-section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.users-inside{
+  background-color: #0a91917e;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.users-inside a{
+  text-decoration: none;
+}
+.users-inside p{
+  margin-top: 5px;
+}
+.details{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details-inside{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #057d817c;
+  padding: 20px;
+  border-radius: 10px;
+}
+.details-inside h1{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.select select{
+  width: 50px;
+  height: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid ;
+  text-align: center;
+}
+.details .button{
+  width: 50%;
+  padding: 20px;
+}
+button{
+  padding: 6px;
+  border: none;
+  background-color: darkblue;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+.sub-menu{
+  width: 100%;
+  margin: 30px 0px;
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+.sub-menu a{
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: dodgerblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+.sub-menu .active{
+  background-color: darkblue;
+}
+table,tr,td,th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td,th{
+  padding: 15px;
+}
+.remarks h1{
+  padding: 15px;
+  background-color: #6494ed8a;
+  border-radius: 10px;
+}
+.sports{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 20px;
+}
+.sports span{
+  border: 1px solid black;
+  padding: 10px;
+  margin-left: 0.5px;
 }
