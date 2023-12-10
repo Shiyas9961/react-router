@@ -3,7 +3,6 @@ import { useOutletContext } from 'react-router-dom'
 
 const Remarks = () => {
   const {remarks} = useOutletContext()
-  console.log(remarks[0])
 
   return (
     <div className='remarks'>

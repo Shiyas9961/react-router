@@ -11,20 +11,28 @@ body{
   background-color: cadetblue;
 }
 header{
-  padding: 5px;
+  padding: 10px;
   width: 100%;
   background-color: indigo;
 }
 header nav{
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
   font-size: 1.2rem;
+  color: beige;
+  padding: 10px;
 }
-header nav a{
+header nav .normal-nav a{
   text-decoration: none;
   color: whitesmoke;
   padding: 10px;
   font-weight: 600;
+}
+.logout-nav .logout-btn{
+  width: 50px;
+  font-weight: bold;
+  cursor: pointer;
 }
 main {
   margin: 0px 30px;
@@ -32,7 +40,7 @@ main {
   background-color: wheat;
   padding: 15px;
 }
-.active{
+header nav .normal-nav .active{
   text-decoration: underline;
   background-color: beige;
   color: black;
@@ -135,4 +143,27 @@ td,th{
   border: 1px solid black;
   padding: 10px;
   margin-left: 0.5px;
+}
+.login-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.login-page input{
+  height: 35px;
+  width: 250px;
+  outline: none;
+  border: 2px solid blue;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 0px 5px;
+}
+.login-page .error-msg{
+  font-size: 1.3rem;
+  color: crimson;
+  padding: 5px 0px;
+}
+.hide-error{
+  display: none;
 }

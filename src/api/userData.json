@@ -1,0 +1,14 @@
+{
+    "Shiyas" : {
+        "role" : ["user","admin"]
+    },
+    "Kiran" : {
+        "role" : ["user"]
+    },
+    "Naveen" : {
+        "role" : ["user"]
+    },
+    "Sooraj" : {
+        "role" : ["user"]
+    }
+}

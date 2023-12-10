@@ -5,6 +5,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 const Users = () => {
 
     const [data, setData] = useState([])
+    /* useSreach params will get what we give in params*/
     const [searchParams, setSearchParams] = useSearchParams()
     const navigate = useNavigate()
 
@@ -24,6 +25,7 @@ const Users = () => {
     }
 
     const handleCell = (item) => {
+        /* We can sent props through useNaviget as second Argument it is function */
         navigate(`${item.id}`,{
             state : {
                 data : item

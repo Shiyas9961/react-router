@@ -4,7 +4,7 @@ import { useOutletContext } from 'react-router-dom'
 const Sports = () => {
 
   const {sports ={}} = useOutletContext()
-  console.log(sports)
+  
   return (
     <div className='sports'>
       <div>

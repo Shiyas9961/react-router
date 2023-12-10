@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useParams, useLocation, useNavigate, NavLink, Outlet } from 'react-router-dom'
+import { useParams, useLocation, useNavigate, Outlet } from 'react-router-dom'
+import NavLinks from './Link/NavLinks'
 
 const Details = () => {
 
-    const locate = useLocation()
+    /* useLoaction uses because we can catch the props from Outlet component */
+    const locate = useLocation() 
     const state = locate.state || {}
 
 
@@ -41,12 +43,14 @@ const Details = () => {
             <p><span style={{fontWeight:'bold'}}>Class :</span> {data.class}</p>
         </div>
         <div className='sub-menu'>
-            <NavLink end to=''>Marks</NavLink>
-            <NavLink to='sports'>Sports</NavLink>
-            <NavLink to='remarks'>Remarks</NavLink>
+            <NavLinks end to=''>Marks</NavLinks>
+            <NavLinks to='sports'>Sports</NavLinks>
+            <NavLinks to='remarks'>Remarks</NavLinks>
         </div>
         <div className='sub-body'>
+            {/* We can sent props through Outlet with context prop */}
             <Outlet context={data}/>
+            {/* Decsentent Route */}
             {/* <Routes>
                 <Route path='' element={<Marks/>}/>
                 <Route path='sports' element={<Sports/>}/>
